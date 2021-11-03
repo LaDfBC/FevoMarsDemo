@@ -13,9 +13,9 @@ These are basically different forms of using a package manager to install maven.
 You can also download it manually here: https://maven.apache.org/download.cgi
 
 **Ubuntu-like Systems**: ```sudo apt install maven``` <br><br>
-**Debian-like Systems**: ```yum install maven``` <br><br>
-**Mac**: ```brew install maven``` <br><br>
-**Windows**: I think you need to install maven manually and then you can ```mvn test```
+**Debian-like Systems**: ```sudo yum install maven``` <br><br>
+**Mac**: ```brew install maven``` If you don't have Homebrew, you will probably need to install Maven manually.<br><br>
+**Windows**: I think you need to install maven manually using the above link
 
 ### Execute the Main Method
 Get an API Key from NASA, here: https://api.nasa.gov/ and then copy it.
@@ -26,6 +26,10 @@ then <br><br>
 
 **DON'T FORGET TO REPLACE WITH YOUR OWN API KEY** <br>
 (You can also use "DEMO_KEY" for testing or one-off runs!)
+
+If you run into issues, make sure your system didn't name the jar differently.  There's no easy way to force it on all
+Operating Systems but the above will **probably** work.  If it doesn't, do an `ls target` and check what the jar is named.
+You're looking for the one that ends with `jar-with-dependences.jar`.
 
 
 ## Testing
